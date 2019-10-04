@@ -1,0 +1,22 @@
+/* style.css */
+
+/* cyan background for navigation bar */
+.topnav {
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+/* style for links inside navigation bar */
+.topnav a {
+    float: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    background-color: cadetblue;
+    color: black;
+}

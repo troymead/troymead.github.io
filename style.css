@@ -4,6 +4,12 @@
 .topnav {
     background-color: darkcyan;
     overflow: hidden;
+    border: 1px;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 /* style for links inside navigation bar */
@@ -15,6 +21,7 @@
     text-decoration: none;
     font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
+    display: inline-block;
 }
 
 .topnav a:hover {
@@ -22,19 +29,63 @@
     color: black;
 }
 
-h1 {
-    font-size: 32px;
+.topnav ul {
+    display: inline-block;
+    list-style-type: none;
+    position: sticky;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.social-media i, .social-media p {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+}
+
+h1, h2, h3, h4, p {
     font-family: 'Titillium Web', sans-serif;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 48px;
     text-align: center;
 }
 
 h2 {
-    font-size: 24px;
-    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 26px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 22px;
     text-align: left;
 }
 
 p {
-    font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+p.align {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.resize {
+    width: 300px;
+    height: 300px;
 }

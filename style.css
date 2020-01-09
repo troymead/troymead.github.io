@@ -1,8 +1,11 @@
 /* style.css */
 
+body {
+    background-color: #efefef;
+}
 /* cyan background for navigation bar */
 .topnav {
-    background-color: darkcyan;
+    background-color: #ff3b3f;
     overflow: hidden;
     border: 1px;
     border-width: 1px 0;
@@ -19,13 +22,13 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
     display: inline-block;
 }
 
 .topnav a:hover {
-    background-color: cadetblue;
+    background-color: #efefef;
     color: black;
 }
 
@@ -42,10 +45,17 @@
 .social-media i, .social-media p {
     text-align: center;
     color: black;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 h1, h2, h3, h4, p {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.25;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#employer, #position, #date , #about, #experience, #projects, #hobbies, #position-desc {
     font-family: 'Titillium Web', sans-serif;
     line-height: 1.25;
 }
@@ -53,25 +63,33 @@ h1, h2, h3, h4, p {
 h1 {
     font-size: 48px;
     text-align: center;
+    color: #141414;
 }
 
 h2 {
     font-size: 30px;
     text-align: left;
+    color: #141414;
 }
 
-h3 {
+h3, #employer {
     font-size: 26px;
     text-align: left;
+    color: #424242;
 }
 
-h4 {
+h4, #position {
     font-size: 22px;
     text-align: left;
+    color: #424242;
 }
 
-p {
+p, #date, #position-desc {
     font-size: 20px;
+    color: #6b6b6b;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p.align {
@@ -89,3 +107,21 @@ img.resize {
     width: 300px;
     height: 300px;
 }
+
+/* slideshow; need to test */
+/* #slideshow {
+    margin: 80px auto;
+    position: relative;
+    /* width: 240px;
+    height: 240px; */
+    padding: 10px;
+
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+} */

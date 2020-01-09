@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Troy Meadows">
         <meta name="description" content="Personal Website for Troy Meadows">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/f9917b744a.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <title>Troy Meadows</title>
@@ -19,74 +22,87 @@
                 <li><a href="#experience">Experience</a></li> <!--add resume at bottom of this section-->
                 <li><a href="#projects">Projects</a></li> <!--add github link at bottom of this section-->
                 <li><a href="#hobbies">Hobbies</a></li> <!--include photography-->
-                <li><a href="#contact">Contact</a></li> <!--possibly include form for email; include link to linkedin-->
             </ul>
         </div>
         <div class="welcome">
             <h1>Troy Meadows</h1>
             <img class="resize" src="images/profile.png" alt="Picture of Troy Meadows">
-            <!-- <p class="align">Welcome to my Website! (placeholder)</p> -->
             <script>updateGreeting()</script> <!--need to test-->
+            <p class="align">Python | C++ | HTML + CSS | Data Structures</p>
         </div>
         <div class="social-media">
             <p>
                 <a target="_blank" href="https://linkedin.com/in/meadowstroy/"><i class="fab fa-linkedin"></i></a>
                 <a target="_blank" href="https://github.com/troymead"><i class="fab fa-github-square"></i></a>
+                <a href="mailto:meadowts@mail.uc.edu"><i class="fas fa-envelope-square"></i></a>
             </p>
         </div>
         <!-- ABOUT -->
         <div class="about">
             <h2 id="about">About</h2>
-            <p>I am a third year Computer Science student at the University of Cincinnati on track to graduate in May of 2022. I currently serve as chapter secretary
+            <p id="position-desc">I am a third year Computer Science student at the University of Cincinnati on track to graduate in May of 2022. I currently serve as chapter secretary
                 for the National Society of Black Engineers (NSBE) on campus where I have the opportunity to mentor, serve the community, and make advancements in my academic and professional career.
             </p>
         </div>
 
         <!-- EXPERIENCE -->
         <div class="experience">
-            <h2 id="experience">Experience</h2>
-            <div class="content">
-                <h3>GE Aviation</h3>
-                <h4> Software Engineering Co-op</h4>
-                <p>August 2019 - Present</p>
-            </div>
             <div>
-                <p>Will be updated soon!</p>
+                <h2 id="experience">Experience</h2>
+                <h3 id="employer">GE Aviation - Engines</h3>
+                <h4 id="position">Software Engineering Co-op</h4>
+                <p id="date">Aug 2019 - Dec 2019</p>
+                <p id="position-desc">During my second co-op rotation with GE Aviation I had the opportunity to contribute to the development of the Full Authority Digital Engine 
+                    Control (FADEC) System for the <a target="_blank" href="https://www.geaviation.com/commercial/engines/ge9x-commercial-aircraft-engine">GE9X commercial engine</a> through 
+                    the GE9X Software team. While on this team, the majority of my work consisted of helping the team get through tool qualification and required engine certification. 
+                    My contribution to the tool qualification effort consisted of reviewing results from tests cases of a few Python tools the team used, and making sure that the reuslts matched 
+                    what was described in the requirements. I also conducted 5 test case reviews on new function implementations to aid in the formal software testing process, which was used as a part 
+                    of the overall engine Part 33 certification. During the rotation I learned more about requirements software such as IBM Rational DOORS and Rational Change.
+                </p>
             </div>
-            <!-- <table>
-                <tr>
-                    <td><h3>GE Aviation</h3>
-                        <p>August 2019 - Present</p>
-                    </td>
-                    <td><p>Will be updated soon!</p></td>
-                </tr>
-                <tr>
-                    <td><h3>GE Aviation</h3>
-                        <p>January 2019 - May 2019</p>
-                    </td>
-                    <td><p>Info about co-op position</p></td>
-                </tr>
-            </table> -->
+            <br>
+            <div>
+                <h3 id="employer">GE Aviation - Aviation Systems</h3>
+                <h4 id="position">Software Engineering Co-op</h4>
+                <p id="date">Jan 2019 - May 2019</p>
+                <p id="position-desc">My first co-op rotation was with GE Aviation in Grand Rapids, Michigan under the Aviation Systems division. During this rotation, I contributed to the 
+                    <a target ="_blank" href="https://www.geaviation.com/press-release/systems/ge-aviation-and-auterion-team-provide-all-one-hardware-and-software-platform">Civil Unmanned Air Systems</a> program through
+                    developing tools using Python which aided in vehicle configuration. While I was there, my team focused on integrating a drone autopilot software called PX4 into different flying vehicle configurations, one including quadcopters. 
+                    The first Python tool I developed took data from test flight logs and printed plots based on this data to PDFs. The purpose of this tool was to make the post-flight data processing step more efficient to the team. Before the development
+                    of the tool, the team spent unnecessary time extracting extensive data into CSV files, then creating charts that were necessary for review. 
+                    The second tool I developed helped the team calibrate the gyroscope sensors used on each vehicle developed. This consisted of extracting data from gyroscope sensor tests then comparing the test results to the expected values and generating 
+                    compensation values based on the difference.
+                </p>
+            </div>
         </div>
 
         <!-- PROJECTS -->
         <div class="projects">
             <h2 id="projects">Projects</h2>
+            <h4>Coming Soon!</h4>
         </div>
 
         <!-- HOBBIES -->
         <div class="hobbies">
             <h2 id="hobbies">Hobbies</h2>
-            <p>Besides learning new languages and their capabilities, I have a passion for photography. Blah blah blah</p>
+            <p id="position-desc">Besides learning new languages and their capabilities, I have a passion for photography. Since I was 13 years old, I have made an effort 
+                to express myself through my photography, usually through portraits of my friends and family. Recently, I've taken the initiative to document 
+                moments at events put together by my school's NSBE chapter. Feel free to browse some of my work!
+            </p>
+            <!-- <div id="slideshow">
+                <div><img src="images/flame.jpeg"></div>
+                <div><img src="images/mylunhmoa.jpeg"></div>
+                <div><img src="images/madisonusa.jpeg"></div>
+                <div><img src="images/perk.jpg"></div>
+                <div><img src="images/madisonusa2.jpeg"></div>
+                <div><img src="images/mylunfl.jpeg"></div>
+                <div><img src="images/eman.jpeg"></div>
+                <div><img src="images/efad2019.jpeg"></div>
+                <div><img src="images/newyork.jpeg"></div>
+            </div> -->
             <!--Include pictures at some point-->
         </div>
 
-        <!-- CONTACT -->
-        <div class="contact">
-            <h2 id="contact">Contact</h2>
-            <p>If you would like to contact me, feel free to reach out through LinkedIn or email me.</p>
-            <!--Need to include jquery form at some point-->
-        </div>
         <footer>
             <!-- not sure what to put here yet... -->  
         </footer>

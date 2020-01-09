@@ -112,13 +112,13 @@ img.resize {
 /* #slideshow {
     margin: 80px auto;
     position: relative;
-    /* width: 240px;
-    height: 240px; */
+    width: 240px;
+    height: 240px;
     padding: 10px;
 
-}
+} */
 
-#slideshow > div {
+/* #slideshow > div {
     position: absolute;
     top: 10px;
     left: 10px;

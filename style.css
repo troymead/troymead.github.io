@@ -2,9 +2,10 @@
 
 body {
     background-color: #efefef;
+    padding-top: 65px;
 }
 /* cyan background for navigation bar */
-.topnav {
+#topnav {
     background-color: #ff3b3f;
     overflow: hidden;
     border: 1px;
@@ -12,11 +13,14 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     text-align: center;
 }
 
 /* style for links inside navigation bar */
-.topnav a {
+#topnav a {
     float: center;
     color: white;
     text-align: center;
@@ -27,19 +31,28 @@ body {
     display: inline-block;
 }
 
-.topnav a:hover {
+#topnav a:hover {
     background-color: #efefef;
     color: black;
 }
 
-.topnav ul {
+#topnav ul {
     display: inline-block;
     list-style-type: none;
-    position: sticky;
 }
 
-.topnav li {
+#topnav li {
     display: inline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
 
 .social-media i, .social-media p {
@@ -96,8 +109,17 @@ p.align {
     text-align: center;
 }
 
-img {
+#circle-img {
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* need to see how this looks */
+#carousel-img {
+    width: 25%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -108,20 +130,18 @@ img.resize {
     height: 300px;
 }
 
-/* slideshow; need to test */
-/* #slideshow {
-    margin: 80px auto;
+#slideshow {
+    margin: 50px auto;
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    height: auto;
     padding: 10px;
+}
 
-} */
-
-/* #slideshow > div {
+#slideshow > div {
     position: absolute;
     top: 10px;
     left: 10px;
     right: 10px;
     bottom: 10px;
-} */
+}

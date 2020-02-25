@@ -30,13 +30,15 @@
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li> <!--add resume at bottom of this section-->
+                <li><a href="#career-goals">Career Goals</a></li>
                 <li><a href="#projects">Projects</a></li> <!--add github link at bottom of this section-->
-                <li><a href="#hobbies">Hobbies</a></li> <!--include photography-->
+                <!-- <li><a href="#hobbies">Hobbies</a></li> -->
+                <li><a href="#reflection">Reflection</a></li>
             </ul>
         </div>
         <div class="welcome">
-            <h1>Troy Meadows</h1>
-            <img id="circle-img" class="resize" src="images/profile.png" alt="Picture of Troy Meadows">
+            <h1 id="section-title">Troy Meadows</h1>
+            <img id="circle-img" class="resize" src="images/headshot.jpeg" alt="Picture of Troy Meadows">
             <script>updateGreeting()</script> <!--need to test-->
             <p class="align">Python | C++ | HTML + CSS | Data Structures</p>
         </div>
@@ -48,17 +50,26 @@
             </p>
         </div>
         <!-- ABOUT -->
-        <div class="about">
-            <h2 id="about">About</h2>
+        <!-- need to add MLT, update interests -->
+        <!-- add contact information (email) -->
+        <div class="about" id="about">
+            <h2 id="section-title">About</h2>
+            <!-- <h2 id="about">About</h2> -->
             <p id="position-desc">I am a third year Computer Science student at the University of Cincinnati on track to graduate in May of 2022. I currently serve as chapter secretary
                 for the National Society of Black Engineers (NSBE) on campus where I have the opportunity to mentor, serve the community, and make advancements in my academic and professional career.
+            </p>
+            <p id="position-desc">During my two co-op rotations at GE Aviation, I had the opportunity to explore data science and understand software testing processes such as test-driven development. With these experiences under my belt,
+                I am seeking different opportunities to take what I have learned and apply it to other areas within software engineering.
             </p>
         </div>
 
         <!-- EXPERIENCE -->
-        <div class="experience">
+        <!-- need to update experiences w/ importance of experience (1 technical, 1 non-tech) -->
+        <div class="experience" id="experience">
             <div>
-                <h2 id="experience">Experience</h2>
+                <!-- should i change id tag to section-title?? -->
+                <h2 id="section-title">Experience</h2>
+                <!-- <h2 id="experience">Experience</h2> -->
                 <h3 id="employer">GE Aviation - Engines</h3>
                 <h4 id="position">Software Engineering Co-op</h4>
                 <p id="date">Aug 2019 - Dec 2019</p>
@@ -67,7 +78,8 @@
                     the GE9X Software team. While on this team, the majority of my work consisted of helping the team get through tool qualification and required engine certification. 
                     My contribution to the tool qualification effort consisted of reviewing results from tests cases of a few Python tools the team used, and making sure that the reuslts matched 
                     what was described in the requirements. I also conducted 5 test case reviews on new function implementations to aid in the formal software testing process, which was used as a part 
-                    of the overall engine Part 33 certification. During the rotation I learned more about requirements software such as IBM Rational DOORS and Rational Change.
+                    of the overall engine Part 33 certification. During the rotation I learned more about requirements software such as IBM Rational DOORS and Rational Change. This experience allowed me to
+                    learn more about the test-driven development process.
                 </p>
             </div>
             <br>
@@ -83,22 +95,71 @@
                     The second tool I developed helped the team calibrate the gyroscope sensors used on each vehicle developed. This consisted of extracting data from gyroscope sensor tests then comparing the test results to the expected values and generating 
                     compensation values based on the difference.
                 </p>
+                <p id="position-desc">Beyond the technical skills I learned, I also had the opportunity to contribute to a project that followed the Agile methodology for software development. During my time, I participated in my team's daily standup meetings, 
+                    contributed to sprint planning, and held code reviews for the team in order to produce a product that would satisfy all parties.
+                </p>
             </div>
         </div>
 
-        <!-- PROJECTS -->
-        <div class="projects">
-            <h2 id="projects">Projects</h2>
-            <h4>Coming Soon!</h4>
+        <!-- TODO: add resume section and career goals: career trajectory, aspirations, etc -->
+        <!-- CAREER GOALS -->
+        <div class="career-goals" id="career-goals">
+            <h2 id="section-title">Career Goals</h2>
+            <p id="position-desc">After two co-op rotations, I have had the opportunity to explore different realms of computer science. The two that I have the most familiarity with right now are data science and software testing and quality assurance. With my experience 
+                and current knowledge, I would like to explore more opportunities for data analysis. Outside of my work experience, I have also taken some time to learn more on my own, for example learning JavaScript to possibly pursue web development opportunities. These are the 
+                two areas I am most interested in taking my career at the moment.
+            </p>
+            <embed src="images/ResumeSS2020Update.pdf" type="application/pdf" width="100%" height="600px"/>
+        </div>
+
+        <!-- PROJECTS/INVOLVEMENT/LEADERSHIP -->
+        <div class="projects" id="projects">
+            <h2 id="section-title">Projects, Involvement, and Leadership</h2>
+            <h3 id="employer">Twitter Bot</h3>
+            <h4 id="position">Personal Project</h4>
+            <p id="date">In Progress</p>
+            <ul id="position-desc">
+                <li><p id="position-desc">Consists of a Python script that tweets songs from a Spotify playlist once daily</p></li>
+                <li><p id="position-desc">Using Twitter and Spotify APIs through Python libaries such as Tweepy and Spotipy</p></li>
+                <li><p id="position-desc">Project can be found on my Github Profile</p></li>
+            </ul>
+
+            <h3 id="employer">National Society of Black Engineers</h3>
+            <h4 id="position">Secretary</h4>
+            <p id="date">Apr 2018 - Present</p>
+            <ul id="position-desc">
+                <li><p id="position-desc">Oversee the chapter's communication zone through maintaining the event calendar, monitoring social media pages and keeping
+                    the office tidy</p>
+                </li>
+                <li><p id="position-desc">Organize events such as A Walk For Education to educate surrounding communities of opportunities offered for UC students</p>
+                </li>
+                <li><p id="position-desc">Lead a team of four students to develop a website for the chapter using HTML, CSS, and JavaScript</p>
+                </li>
+                <li><p id="position-desc">Send at least one email per week to over 100 subscribers containing information about upcoming meetings, scholarship and networking 
+                    opportunities, and volunteering activities
+                </p>
+                </li>
+            </ul>
+
+            <h3 id="employer">Management Leadership for Tomorrow</h3>
+            <h4 id="position">Career Prep Program Fellow</h4>
+            <p id="date">Feb 2020 - Present</p>
+            <ul id="position-desc">
+                <li><p id="position-desc">Selected as one of 410 for an 18-month professional development program for high-achieving diverse talent</p></li>
+                <li><p id="position-desc">Complete business case studies and intensive assignments to hone analytical, quantitative and communication skills</p></li>
+                <li><p id="position-desc">Participate in conferences hosted by industry leaders, such as Deloitte, LinkedIn, Goldman Sachs, Procter & Gamble, and Target</p></li>
+            </ul>
+            <!-- <h4>Coming Soon!</h4> -->
         </div>
 
         <!-- HOBBIES -->
-        <div class="hobbies">
-            <h2 id="hobbies">Hobbies</h2>
-            <p id="position-desc">Besides learning new languages and their capabilities, I have a passion for photography. Since I was 13 years old, I have made an effort 
+        <!-- <div class="hobbies">
+            <h2 id="section-title">Hobbies</h2> -->
+            <!-- <h2 id="hobbies">Hobbies</h2> -->
+            <!-- <p id="position-desc">Besides learning new languages and their capabilities, I have a passion for photography. Since I was 13 years old, I have made an effort 
                 to express myself through my photography, usually through portraits of my friends and family. Recently, I've taken the initiative to document 
                 moments at events put together by my school's NSBE chapter. Feel free to browse some of my work!
-            </p>
+            </p> -->
             <!-- <div id="slideshow">
                 <div><img src="images/flame.jpeg"></div>
                 <div><img src="images/mylunhmoa.jpeg"></div>
@@ -141,6 +202,21 @@
                 </div> -->
             <!-- </div> -->
             <!--Include pictures at some point-->
+        <!-- </div> -->
+
+        <!-- REFLECTION -->
+        <div class="reflection" id="reflection">
+            <h2 id="section-title">Reflection</h2>
+            <p id="position-desc">I feel that pursuing a computer science degree at UC has greatly helped me develop my technical and interpersonal skills, 
+                work for a great company that makes an impact, and create genuine connections with people who have a passion for engineering as a whole. 
+                I have encountered work that I enjoyed doing, as well as some projects that were not as exciting to complete. Through these experiences, I have 
+                learned that there will always be things in your career that you like to do and have the opprtunity to do so, but there will also be assignments 
+                and tasks that must be completed even though they might not be as interesting.
+            </p>
+            <p id="position-desc">As I focus on completing my remaining two years here, I plan to focus on seeking out different job and learning opportunities to eventually find 
+                a path that interests me the most, ultimately leading me to make a decision on what I would like to pursue post-graduation. I hope to do this through programs and organizations
+                 I am currently a part of (MLT, NSBE) that allow me to develop myself academically and professionally.
+            </p>
         </div>
 
         <footer>

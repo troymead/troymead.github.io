@@ -68,7 +68,7 @@ h1, h2, h3, h4, p {
     margin-right: 20px;
 }
 
-#employer, #position, #date , #about, #experience, #projects, #hobbies, #position-desc {
+#section-title, #date, #position-desc, #position, #employer {
     font-family: 'Titillium Web', sans-serif;
     line-height: 1.25;
 }

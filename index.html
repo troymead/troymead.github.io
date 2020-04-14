@@ -27,7 +27,7 @@
     <body>
         <div id="topnav">
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
+                <li><a class="active" href="#welcome">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li> <!--add resume at bottom of this section-->
                 <li><a href="#career-goals">Career Goals</a></li>
@@ -36,13 +36,13 @@
                 <li><a href="#reflection">Reflection</a></li>
             </ul>
         </div>
-        <div class="welcome">
+        <div class="welcome" id="welcome">
             <h1 id="section-title">Troy Meadows</h1>
             <img id="circle-img" class="resize" src="images/headshot.jpeg" alt="Picture of Troy Meadows">
             <script>updateGreeting()</script> <!--need to test-->
             <p class="align">Python | C++ | HTML + CSS | Data Structures</p>
         </div>
-        <div class="social-media">
+        <div class="social-media" id="social-media">
             <p>
                 <a target="_blank" href="https://linkedin.com/in/meadowstroy/"><i class="fab fa-linkedin"></i></a>
                 <a target="_blank" href="https://github.com/troymead"><i class="fab fa-github-square"></i></a>
@@ -109,7 +109,7 @@
                 and current knowledge, I would like to explore more opportunities for data analysis. Outside of my work experience, I have also taken some time to learn more on my own, for example learning JavaScript to possibly pursue web development opportunities. These are the 
                 two areas I am most interested in taking my career at the moment.
             </p>
-            <embed src="images/ResumeSS2020Update.pdf" type="application/pdf" width="100%" height="600px"/>
+            <div class="text-center"><a target="_blank" href="images/ResumeSS2020.pdf" class="btn btn-secondary btn-lg" role="button">Click here for my resume!</a></div>
         </div>
 
         <!-- PROJECTS/INVOLVEMENT/LEADERSHIP -->
@@ -120,8 +120,26 @@
             <p id="date">In Progress</p>
             <ul id="position-desc">
                 <li><p id="position-desc">Consists of a Python script that tweets songs from a Spotify playlist once daily</p></li>
-                <li><p id="position-desc">Using Twitter and Spotify APIs through Python libaries such as Tweepy and Spotipy</p></li>
-                <li><p id="position-desc">Project can be found on my Github Profile</p></li>
+                <li><p id="position-desc">Uses Twitter and Spotify APIs through Python libaries such as Tweepy and Spotipy</p></li>
+                <li><p id="position-desc">Project can be found on my <a target="_blank" href="https://github.com/troymead/twitter_bot">Github Profile</a></p></li>
+            </ul>
+            <!-- testing -->
+            <!-- <div class="card">
+                <div class="card-body">
+                    <h3 id="employer" class="card-title">Twitter Bot</h3>
+                    <h4 id="position" class="card-text">Personal Project</h4>
+                    <p id="date" class="card-text">In Progress</p>
+                </div>
+            </div> -->
+
+
+            <h3 id="employer">Supreme Bot</h3>
+            <h4 id="position">Personal Project</h4>
+            <p id="date">Dec 2018</p>
+            <ul id="position-desc">
+                <li><p id="position-desc">A Python program that allows the user to automate the checkout process on Supreme New York's website</p></li>
+                <li><p id="position-desc">Automation process was handled using Selenium and the GUI was created with Tkinter</p></li>
+                <li><p id="position-desc">Project can be found on my Github Profile (soon).</p></li>
             </ul>
 
             <h3 id="employer">National Society of Black Engineers</h3>

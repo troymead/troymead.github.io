@@ -1,5 +1,22 @@
 /* style.css */
 
+.under-construction {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 body {
     background-color: #efefef;
     padding-top: 65px;
@@ -59,6 +76,8 @@ body {
     text-align: center;
     color: #3D6938;
     font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
@@ -68,9 +87,9 @@ body {
 
 h1, h2, h3, h4, p {
     font-family: 'Titillium Web', sans-serif;
-    line-height: 1.25;
+    /* line-height: 1.25;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
 #section-title, #date, #position-desc, #position, #employer {
@@ -86,7 +105,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    text-align: left;
+    /* text-align: left; */
     color: #141414;
 }
 
@@ -102,7 +121,7 @@ h4, #position {
     color: #424242;
 }
 
-p, #date, #position-desc {
+/* p, #date, #position-desc {
     font-size: 20px;
     color: #6b6b6b;
     text-align: left;
@@ -112,7 +131,7 @@ p, #date, #position-desc {
 
 p.align {
     text-align: center;
-}
+} */
 
 #circle-img {
     border-radius: 50%;
@@ -121,32 +140,9 @@ p.align {
     margin-right: auto;
 }
 
-/* need to see how this looks */
-#carousel-img {
-    width: 25%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 img.resize {
     width: 300px;
     height: 300px;
 }
 
-#slideshow {
-    margin: 50px auto;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-
-#slideshow > div {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-}

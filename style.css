@@ -87,9 +87,9 @@ body {
 
 h1, h2, h3, h4, p {
     font-family: 'Titillium Web', sans-serif;
-    /* line-height: 1.25;
+    line-height: 1.25;
     margin-left: 20px;
-    margin-right: 20px; */
+    margin-right: 20px;
 }
 
 #section-title, #date, #position-desc, #position, #employer {
@@ -121,7 +121,7 @@ h4, #position {
     color: #424242;
 }
 
-/* p, #date, #position-desc {
+p, #date, #position-desc {
     font-size: 20px;
     color: #6b6b6b;
     text-align: left;
@@ -131,7 +131,7 @@ h4, #position {
 
 p.align {
     text-align: center;
-} */
+}
 
 #circle-img {
     border-radius: 50%;
